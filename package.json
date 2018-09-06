@@ -1,7 +1,7 @@
 {
   "name": "MinnextRPi",
   "version": "0.0.0",
-  "description": "Minnext softwaare for field devices",
+  "description": "Minnext software for field devices",
   "main": "index.js",
   "scripts": {
     "test": "node index"
@@ -21,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/DLozanoNavas/MinnextRPi/issues"
   },
-  "homepage": "https://github.com/DLozanoNavas/MinnextRPi#readme"
+  "homepage": "https://github.com/DLozanoNavas/MinnextRPi#readme",
+  "dependencies": {
+    "onoff": "^3.2.1"
+  }
 }
