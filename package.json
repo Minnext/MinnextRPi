@@ -1,0 +1,25 @@
+{
+  "name": "MinnextRPi",
+  "version": "0.0.0",
+  "description": "Minnext softwaare for field devices",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DLozanoNavas/MinnextRPi.git"
+  },
+  "keywords": [
+    "Blockchain",
+    "RaspberryPi",
+    "Sensors",
+    "IoT"
+  ],
+  "author": "Daniel Lozano Navas",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DLozanoNavas/MinnextRPi/issues"
+  },
+  "homepage": "https://github.com/DLozanoNavas/MinnextRPi#readme"
+}
