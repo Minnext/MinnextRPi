@@ -23,6 +23,8 @@
   },
   "homepage": "https://github.com/DLozanoNavas/MinnextRPi#readme",
   "dependencies": {
+    "azure-iot-device": "^1.7.4",
+    "azure-iot-device-amqp": "^1.7.4",
     "onoff": "^3.2.1",
     "socket.io": "^2.1.1"
   }

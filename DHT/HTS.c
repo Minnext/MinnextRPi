@@ -44,7 +44,6 @@ void read_dht11_dat()
 			dht11_dat[j / 8] <<= 1;
 			if ( counter > 16 )
 				dht11_dat[j / 8] |= 1;
-
 			j++;
 		}
 	}
