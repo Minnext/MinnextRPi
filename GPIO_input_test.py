@@ -1,0 +1,30 @@
+#!/usr/bin/python3
+#encoding:utf-8
+#Tutorial: http://www.knight-of-pi.org/digital-sensors-and-the-raspberry-pi-with-the-smoke-detector-mq-x-as-example/
+#Licence: http://creativecommons.org/licenses/by-nc-sa/3.0/
+# Author: Johannes Bergs
+
+# the sensor has to be connected to pin 1 for power, pin 6 for ground
+# and pin 7 for signal(board numbering!).
+
+import time
+import sys
+import RPi.GPIO as GPIO
+
+GPIO.setmode(GPIO.BOARD)
+GPIO.setup(7, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
+
+def action(pin):
+    print('Sensor detected action!')
+    return
+
+GPIO.add_event_detect(7, GPIO.RISING)
+GPIO.add_event_callback(7, action)
+
+try:
+    while True:
+        print('alive')
+        time.sleep(0.5)
+except KeyboardInterrupt:
+    GPIO.cleanup()
+    sys.exit()

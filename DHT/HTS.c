@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <stdint.h>
 #define MAXTIMINGS	85
-#define DHTPIN		7
+#define DHTPIN		0
 int dht11_dat[5] = { 0, 0, 0, 0, 0 };
  
 void read_dht11_dat()
@@ -44,6 +44,7 @@ void read_dht11_dat()
 			dht11_dat[j / 8] <<= 1;
 			if ( counter > 16 )
 				dht11_dat[j / 8] |= 1;
+
 			j++;
 		}
 	}
@@ -57,11 +58,12 @@ void read_dht11_dat()
 	}else  {
 		printf( "Data not good, skip\n" );
 	}
+
 }
  
 int main( void )
 {
-	printf( "Raspberry Pi wiringPi DHT11 Temperature test program\n" );
+	printf( "Minnext WiringPi DHT11 Temperature Monitoring\n" );
  
 	if ( wiringPiSetup() == -1 )
 		exit( 1 );
